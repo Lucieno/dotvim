@@ -100,31 +100,31 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 set laststatus=2 
 
-" Plugin 'Valloric/YouCompleteMe'
-" let g:ycm_server_python_interpreter = 'python'
-" let g:ycm_autoclose_preview_window_after_insertion = 1
-" let g:ycm_complete_in_comments = 1
-" let g:ycm_confirm_extra_conf = 0
-" let g:ycm_collect_identifiers_from_tags_files = 1
-" " set tags+=/data/misc/software/misc./vim/stdcpp.tags
-" " inoremap <leader>; <C-x><C-o>
-" set completeopt-=preview
-" let g:ycm_min_num_of_chars_for_completion=1
-" let g:ycm_cache_omnifunc=1
-" let g:ycm_seed_identifiers_with_syntax=1
-" let g:ycm_collect_identifiers_from_comments_and_strings = 0
-" " let g:ycm_key_invoke_completion = '<M-;>'
-" nmap <leader>d :tab split<CR>:YcmCompleter GoToDefinitionElseDeclaration <C-R>=expand("<cword>")<CR><CR>
-" let g:ycm_always_populate_location_list = 1
-" nmap <leader>f :YcmCompleter FixIt<CR>
-" " let g:pymode_rope_complete_on_dot = 0
-" let g:ycm_filetype_specific_completion_to_disable = {
-"       \ 'ruby': 1
-"       \}
-" 
-" Plugin 'rdnetto/YCM-Generator', { 'branch': 'stable'}
+Plugin 'Valloric/YouCompleteMe'
+let g:ycm_server_python_interpreter = 'python'
+let g:ycm_autoclose_preview_window_after_insertion = 1
+let g:ycm_complete_in_comments = 1
+let g:ycm_confirm_extra_conf = 0
+let g:ycm_collect_identifiers_from_tags_files = 1
+" set tags+=/data/misc/software/misc./vim/stdcpp.tags
+" inoremap <leader>; <C-x><C-o>
+set completeopt-=preview
+let g:ycm_min_num_of_chars_for_completion=1
+let g:ycm_cache_omnifunc=1
+let g:ycm_seed_identifiers_with_syntax=1
+let g:ycm_collect_identifiers_from_comments_and_strings = 0
+" let g:ycm_key_invoke_completion = '<M-;>'
+nmap <leader>d :tab split<CR>:YcmCompleter GoToDefinitionElseDeclaration <C-R>=expand("<cword>")<CR><CR>
+let g:ycm_always_populate_location_list = 1
+nmap <leader>f :YcmCompleter FixIt<CR>
+" let g:pymode_rope_complete_on_dot = 0
+let g:ycm_filetype_specific_completion_to_disable = {
+      \ 'ruby': 1
+      \}
 
-" Plugin 'lyuts/vim-rtags'
+Plugin 'rdnetto/YCM-Generator', { 'branch': 'stable'}
+
+Plugin 'lyuts/vim-rtags'
 
 Plugin 'adimit/prolog.vim'
 

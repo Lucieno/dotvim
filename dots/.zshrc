@@ -12,7 +12,7 @@ source "${HOME}/.iterm2_shell_integration.zsh"
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 # ZSH_THEME="robbyrussell"
 # ZSH_THEME="bureau"
-ZSH_THEME="candy"
+# ZSH_THEME="candy"
 # ZSH_THEME="amuse"
 # ZSH_THEME="spaceship"
 
@@ -91,18 +91,15 @@ fi
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias gitac="git add -u && git stage && git commit -m "
+alias open='xdg-open'
 
 if [[ -r /usr/local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh ]]; then
 source /usr/local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
 fi
 
-# For CUDA and Intel MKL
-export PATH=/usr/local/cuda-8.0/bin:/usr/local/cuda-8.0:$PATH
-export LD_LIBRARY_PATH=/usr/local/cuda-8.0/lib64:$LD_LIBRARY_PATH
-source /opt/intel/compilers_and_libraries_2017.4.196/linux/bin/compilervars.sh intel64
-
-export PATH="/home/lucien/anaconda2/bin:$PATH"
+source ~/.bash_profile
 
 fpath+=($fpath '/usr/local/lib/node_modules/pure-prompt/functions')
 autoload -U promptinit; promptinit
+PURE_CMD_MAX_EXEC_TIME=1
 prompt pure
