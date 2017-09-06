@@ -21,7 +21,7 @@ set so=5
 
 " No backup file
 set nobackup
-set nowritebackup
+set nowritebackup 
 set noswapfile
  
 " No more annoying sounds
@@ -88,7 +88,7 @@ Plugin 'jistr/vim-nerdtree-tabs'
 map <C-n> :NERDTreeTabsToggle<CR>
 let g:nerdtree_tabs_open_on_gui_startup = 0
 
-" Plugin 'junegunn/fzf'
+Plugin 'junegunn/fzf'
 
 " Plugin 'mattn/emmet-vim'
 
